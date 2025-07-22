@@ -1,12 +1,18 @@
-"""Trie data structure also known as PrefixTree"""
+"""Trie data structure also known as PrefixTree, it is derived from Retrieval (reTRIEval)
+Leetcode -> 
+    208. Implement Trie (Prefix Tree) (https://leetcode.com/problems/implement-trie-prefix-tree/description/)
+        Youtube -> https://youtu.be/oobqoCJlHA0
+    1268. Search Suggestions System (https://leetcode.com/problems/search-suggestions-system/description/)
+"""
 from typing import List
 
 
+# ------------------------------------------------
 class TrieNode:
     def __init__(self):
-        self.children = {}
-        self.end_of_word = False
-
+        self.children: dict = {}
+        self.end_of_word: bool = False
+# ------------------------------------------------
 class Trie:
     def __init__(self):
         self.root = TrieNode()
